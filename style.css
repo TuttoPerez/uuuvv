@@ -1,0 +1,221 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ebcead;    
+    font-family: 'Great Vibes', cursive;
+    overflow-y: auto;
+}
+  
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    position: relative;
+  }
+    
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .oval-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .oval {
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  .message {
+    position: absolute;
+    top: 5%;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #191717;
+    text-align: center;
+  }
+  
+  .options {
+    display: flex; 
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+  }
+  
+  #yesButton,
+  #noButton {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 5px; 
+  }
+
+  /*BTN
+  
+  .containerbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .option {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  */
+  #cancel{
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;  
+  }
+
+  #cerrar{
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  .yesButton:hover, .noButton:hover {
+    background-color: #ff6666;
+    color: aquamarine;
+  }
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 1.5s ease;
+  }
+
+  .show {
+    display: block;
+    opacity: 1; /* Cambia la opacidad a 1 para hacer el modal visible */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      display: block;
+      top: 40%;
+      height: 50%;
+      width: 100%;
+      right: 30%;
+    }    
+    .content {
+      position: relative;
+      height: 10px;
+      width: 200px;
+      left: 50%;
+      right: 50%;
+    }
+
+    .oval {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .oval-container {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .message {
+      font-size: 15px;
+    }
+    
+    .modal-content {
+      width: 90%;
+      max-width: 300px;
+    }
+    
+    .options {
+      display: flex; /* Utilizamos flexbox para controlar el diseño */
+      justify-content: center; /* Centramos los botones horizontalmente */
+      position: absolute;
+      bottom: 20px;
+      left: 80%;
+      transform: translateX(-50%);
+      margin: 10px 0; 
+    }
+
+    .viru{
+      width: 100%;
+      height: 100%;
+    }
+  
+  }
