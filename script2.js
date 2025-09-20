@@ -16,7 +16,7 @@
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
     // redireccionar a url de youtube
-    window.location.href = "https://www.youtube.com/watch?v=lsbqH5bJURc&ab_channel=Sebasti%C3%A1nYatra";
+    window.location.href = "https://www.youtube.com/watch?v=MvITnIylaQ8&list=RDMvITnIylaQ8&start_radio=1";
   });
 
   document.getElementById("cancel").addEventListener("click", function() {
